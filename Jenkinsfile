@@ -1,22 +1,18 @@
 pipeline {
-  agent any
-    stages {
- 
-      stage("build only") {
-        steps {      
-          bat 'mvn clean install'        
-        }
-      }
+  agent    {label:node1}
+    stages   {
       stage("stage1") {
 	  steps {
-	    bat 'echo stage1'
+	    bat "echo hello star agile"
+	    bat "git clonehttps://github.com/santoshnh1982/LTI_Project.git"    	  
 	  }
 	}
+    }	    
 	stage("stage2") {
 	  steps {
             bat 'echo stage 2' 
+	    bat "mvn clean install"  	  
 	  }
-	} 
-	    
+	} 	    
     }
 }
