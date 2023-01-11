@@ -1,15 +1,10 @@
 pipeline {
   agent    {label:node1}
-    stages {
- 
-      stage("build only") {
-        steps {      
-          bat 'mvn clean install'        
-        }
-      }
+    stages   {
       stage("stage1") {
 	  steps {
-	    bat 'echo stage1'
+	    bat "echo hello star agile"
+	    bat "git clone  	  
 	  }
 	}
 	stage("stage2") {
