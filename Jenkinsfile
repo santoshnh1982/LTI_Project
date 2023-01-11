@@ -1,5 +1,5 @@
 pipeline {
-  agent  {label:node1}
+  agent  {label "node1"}
     stages   {
       stage("stage1") {
 	  steps {
@@ -8,11 +8,11 @@ pipeline {
 	  }
 	}
     }	    
-	  stage("stage2") {
+      stage("stage2") {
 	  steps {
             bat 'echo stage 2' 
 	    bat "mvn clean install"  	  
 	  }
 	} 	    
     }
-}
+	}
