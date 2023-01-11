@@ -3,8 +3,8 @@ pipeline {
     stages   {
       stage("stage1") {
 	  steps {
-	    bat "echo stage 2"
-	    bat "git clonehttps://github.com/santoshnh1982/LTI_Project.git"    	  
+	    bat "echo stage 1"
+	    bat "git clone https://github.com/santoshnh1982/LTI_Project.git"    	  
 	  }
 	}
     }	    
