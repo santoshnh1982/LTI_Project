@@ -4,7 +4,7 @@ pipeline {
       stage("stage1") {
 	  steps {
 	    bat "echo stage 1"
-	    bat "git clone https://github.com/santoshnh1982/LTI_Project.git   	  
+	    bat "git clone https://github.com/santoshnh1982/LTI_Project.git"    	  
 	  }
 	}
     }	    
@@ -15,4 +15,3 @@ pipeline {
 	  }
 	} 	    
     }
-}
