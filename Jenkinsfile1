@@ -4,7 +4,7 @@ pipeline
     stage ("stage 1" ) {
       steps {
         bat "echo hello good morning how are you "
-        bat "
+        bat "https://github.com/santoshnh1982/LTI_Project.git"
       }
     }
   }
